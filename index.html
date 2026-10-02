@@ -1,0 +1,28 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#790707"><title>Cristinas Salgados • Cardápio</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="shell">
+<header class="hero"><div class="mini">FEITO COM CARINHO ♥</div><h1>Cristinas <span>Salgados</span></h1><p>Sabor que faz bem</p><div class="food">🥟 &nbsp; 🍗 &nbsp; 🧀 &nbsp; 🥟</div></header>
+<nav><a href="#cardapio">Cardápio</a><a href="#pedido">Pedido</a><a href="#pix">Pix</a><a href="#contato">Contato</a></nav>
+<section class="welcome"><span class="pill">ENCOMENDAS</span><h2>Seu cento de salgados<br><em>do jeitinho que você gosta</em></h2><p>Escolha as opções, informe a quantidade e envie seu pedido pelo WhatsApp.</p></section>
+
+<section id="cardapio"><div class="section-title"><small>NOSSO CARDÁPIO</small><h2>Centos de salgados</h2></div>
+<div class="products">
+<article class="product"><div class="emoji">🥐</div><div class="info"><h3>Assados</h3><p>Cento • 100 unidades</p><strong>R$ 60,00</strong></div><div class="stepper"><button onclick="change('assados',-1)">−</button><b id="q-assados">0</b><button onclick="change('assados',1)">+</button></div></article>
+<article class="product featured"><div class="tag">MAIS PEDIDO</div><div class="emoji">🍗</div><div class="info"><h3>Fritos</h3><p>Cento • 100 unidades</p><strong>R$ 90,00</strong></div><div class="stepper"><button onclick="change('fritos',-1)">−</button><b id="q-fritos">0</b><button onclick="change('fritos',1)">+</button></div></article>
+<article class="product"><div class="emoji">🥟</div><div class="info"><h3>Mistos</h3><p>Cento • 100 unidades</p><strong>R$ 75,00</strong></div><div class="stepper"><button onclick="change('mistos',-1)">−</button><b id="q-mistos">0</b><button onclick="change('mistos',1)">+</button></div></article>
+</div></section>
+
+<section id="pedido" class="order"><div class="section-title light"><small>SEU PEDIDO</small><h2>Resumo da encomenda</h2></div><div id="empty">Nenhum item selecionado ainda.</div><div id="items"></div><div class="total"><span>Total estimado</span><strong id="total">R$ 0,00</strong></div>
+<label class="field">Seu nome<input id="customer" placeholder="Digite seu nome"></label>
+<label class="field">Observações<textarea id="obs" placeholder="Ex.: horário para retirada, sabores desejados..."></textarea></label>
+<p class="choose">Escolha para qual WhatsApp deseja enviar:</p>
+<button class="wa" onclick="sendOrder('5567996730566')">💬 Enviar pedido • (67) 99673-0566</button>
+<button class="wa alt" onclick="sendOrder('5567984767523')">💬 Enviar pedido • (67) 98476-7523</button></section>
+
+<section id="pix" class="pix"><div class="pixbadge">◆ PIX</div><h2>Pagamento fácil</h2><p>Após confirmar sua encomenda, você também pode utilizar nosso Pix.</p><img src="qr_pix_cristinas_salgados.png" alt="QR Code Pix"><div class="key">Chave Pix<br><strong>+55 67 98435-5448</strong></div><button class="copy" onclick="copyPix()">Copiar chave Pix</button><div id="toast">✓ Chave copiada!</div><p class="safe">🔒 Antes de confirmar, confira no banco o nome <b>Elaine Cristina da Silva</b>.</p></section>
+
+<section id="contato" class="contact"><div class="section-title"><small>FALE CONOSCO</small><h2>Cristinas Salgados</h2></div>
+<a class="contact-card" href="https://wa.me/5567996730566"><span>💬</span><div><b>WhatsApp</b><small>(67) 99959-2064</small></div><i>›</i></a>
+<a class="contact-card" href="https://wa.me/5567984767523"><span>💬</span><div><b>WhatsApp</b><small>(67) 98476-7523</small></div><i>›</i></a>
+<div class="contact-card"><span>📍</span><div><b>Endereço</b><small>Rua Gonçalves Dias, nº 10 • Corumbá</small></div></div>
+</section><footer><b>Cristinas Salgados</b><span>Obrigada pela preferência ♥</span></footer>
+</main><script>const PIX='00020126360014br.gov.bcb.pix0114+55679843554485204000053039865802BR5924ELAINE CRISTINA DA SILVA6007CORUMBA62070503***6304CB7F', KEY='+5567984355448';</script><script src="script.js"></script></body></html>
